@@ -16,9 +16,9 @@ class YatingClient:
     TYPE_SSML = "ssml"
     TYPE_TEXT = "text"
 
-    MODEL_STANDARD_FEMALE_1 = "zh_en_standard_female_1"
-    MODEL_STANDARD_FEMALE_2 = "zh_en_standard_female_2"
-    MODEL_STANDARD_MALE_1 = "zh_en_standard_male_1"
+    MODEL_FEMALE_1 = "zh_en_female_1"
+    MODEL_FEMALE_2 = "zh_en_female_2"
+    MODEL_MALE_1 = "zh_en_male_1"
 
     ENCODING_MP3 = "MP3"
     ENCODING_LINEAR16 = "LINEAR16"
@@ -81,14 +81,14 @@ class YatingClient:
         Validate parameter for below:
         text        (str): should not be empty
         text_type   (str): ssml, text
-        model       (str): zh_en_standard_female_1, zh_en_standard_female_2, zh_en_standard_male_1
+        model       (str): zh_en_female_1, zh_en_female_2, zh_en_male_1
         encoding    (str): MP3, LINEAR16
         sample_rate (str): 16K (22K not support yet)
         """
 
         type_list = [self.TYPE_SSML, self.TYPE_TEXT]
-        model_list = [self.MODEL_STANDARD_FEMALE_1,
-                      self.MODEL_STANDARD_FEMALE_2, self.MODEL_STANDARD_MALE_1]
+        model_list = [self.MODEL_FEMALE_1,
+                      self.MODEL_FEMALE_2, self.MODEL_MALE_1]
         encoding_list = [self.ENCODING_MP3, self.ENCODING_LINEAR16]
         sample_rate_list = [self.SAMPLE_RATE_16K]
 
