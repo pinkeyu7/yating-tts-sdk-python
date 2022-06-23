@@ -72,7 +72,7 @@ class YatingClient:
                 audio_file.close()
             else:
                 result = response.json()
-                reason = " ".join(result["reason"])
+                reason = " ".join(result["message"])
                 raise HTTPError(self._url, response.status_code,
                                 reason, response.headers, None)
 
